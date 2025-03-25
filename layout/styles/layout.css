@@ -139,7 +139,7 @@ html {
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro {
-  padding: 150px 0 300px;
+  padding: 200px 0 300px;
 } /* 300px => 100px for #introblocks negative margin */
 
 #pageintro article,
@@ -199,6 +199,13 @@ html {
 }
 #introblocks figure figcaption > a {
 }
+
+#introblocks figure img {
+  width: 350px;
+  height: 260px;
+  object-fit: cover; /* Menyesuaikan gambar tanpa merusak rasio */
+}
+
 #introblocks figure figcaption .heading {
   font-size: 1.2rem;
   font-weight: 700;
