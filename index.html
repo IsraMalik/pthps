@@ -20,7 +20,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- Top Background Image Wrapper -->
-    <div class="bgded overlay" style="background-image: url('images/demo/backgrounds/01.png')">
+    <div class="bgded overlay" style="background-image: url('images/demo/backgrounds/02.png')">
       <!-- ################################################################################################ -->
       <div class="wrapper row0">
         <div id="topbar" class="hoc clear">
@@ -75,7 +75,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <div id="logo" class="fl_left">
             <h1>
               <a href="index.html">
-                <img src="images/demo/IMG_20230609_164116.png" alt="Logo PT HPS Cargo Group" style="height: 50px; vertical-align: middle; margin-right: 10px" />
+                <img src="images/demo/IMG_20230609_164116.png" alt="Logo PT HPS Cargo Group" style="height: 50px; vertical-align: middle; margin-right: 10px; filter: brightness(1.5)" />
                 PT HPS Cargo Group
               </a>
             </h1>
@@ -125,7 +125,6 @@ Licence URI: https://www.os-templates.com/template-terms
       <div id="pageintro" class="hoc clear">
         <!-- ################################################################################################ -->
         <article>
-          <!-- <h3 class="heading">Finibus dictum lobortis</h3> -->
           <p>
             <b>PT HPS Cargo Group</b> adalah perusahaan jasa pengurus transportasi yang berkomitmen memberikan solusi logistik <b>terpadu, efisien, dan terpercaya</b> bagi berbagai industri di Indonesia. Dengan jaringan luas dan teknologi
             modern, kami memastikan setiap pengiriman tiba <b>tepat waktu, aman, dan sesuai kebutuhan pelanggan.</b>
@@ -445,9 +444,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
-    <div class="wrapper bgded" style="background-image: url('images/demo/backgrounds/04.png')">
+    <div class="wrapper bgded" id="background-slider">
       <section id="testimonials" class="hoc clear">
-        <!-- ################################################################################################ -->
         <div class="one_half overlay">
           <ul class="nospace">
             <li>
@@ -465,9 +463,49 @@ Licence URI: https://www.os-templates.com/template-terms
             </li>
           </ul>
         </div>
-        <!-- ################################################################################################ -->
       </section>
     </div>
+
+    <style>
+      #background-slider {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out; /* Menambahkan transisi */
+        animation: changeBackground 40s infinite; /* Mengatur durasi animasi */
+      }
+
+      @keyframes changeBackground {
+        0% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.51.58 PM.jpeg");
+        }
+        12.5% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.51.59 PM (1).jpeg");
+        }
+        25% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.51.59 PM.jpeg");
+        }
+        37.5% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.52.00 PM (1).jpeg");
+        }
+        50% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.52.00 PM.jpeg");
+        }
+        62.5% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.52.01 PM (1).jpeg");
+        }
+        75% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.52.01 PM (2).jpeg");
+        }
+        87.5% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.52.01 PM.jpeg");
+        }
+        100% {
+          background-image: url("images/demo/testi/WhatsApp Image 2025-03-26 at 5.51.58 PM.jpeg");
+        }
+      }
+    </style>
+    <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
@@ -656,7 +694,7 @@ Licence URI: https://www.os-templates.com/template-terms
             </li>
             <li class="one_quarter">
               <div class="block clear">
-                <a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Sunday:</strong> 06:00 - 22:00</span>
+                <a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Sunday:</strong> Open 24 Hours</span>
               </div>
             </li>
             <li class="one_quarter">

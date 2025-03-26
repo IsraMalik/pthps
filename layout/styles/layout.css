@@ -36,6 +36,10 @@ File: Layout CSS
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Top Bar
@@ -144,9 +148,9 @@ html {
 
 #pageintro article,
 #pageintro article p {
-  font-size: 18px;
+  font-size: 20px;
   display: block;
-  max-width: 75%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -367,7 +371,7 @@ html {
 }
 #testimonials ul {
   margin: 0;
-  padding: 50px;
+  padding: 75px;
   list-style: none;
 }
 #testimonials ul li {
