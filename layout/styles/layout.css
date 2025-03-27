@@ -771,6 +771,12 @@ nav ol {
   border: solid;
   border-width: 0 0 1px 0;
 }
+#hamburger-icon {
+  display: none; /* Sembunyikan ikon hamburger secara default */
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
 #mainav .drop {
   padding-left: 15px;
 }
@@ -812,16 +818,19 @@ nav ol {
   display: block;
   cursor: pointer;
   outline: none;
+  display: none;
 }
 #mainav form select {
   width: 100%;
   padding: 5px;
   border: none;
+  display: none;
 }
 #mainav form select option {
   margin: 5px;
   padding: 0;
   border: none;
+  display: none;
 }
 
 /* Breadcrumb */
@@ -1596,5 +1605,34 @@ table a,
   }
   .font-x3 {
     font-size: 1.8rem;
+  }
+}
+/* Gaya dropdown menu untuk perangkat seluler */
+@media (max-width: 768px) {
+  #mainav ul {
+    display: none; /* Sembunyikan menu default pada perangkat seluler */
+    flex-direction: column; /* Menu dropdown vertikal */
+    position: absolute;
+    top: 60px; /* Sesuaikan dengan tinggi header */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Sesuaikan warna latar belakang */
+  }
+
+  #mainav ul.responsive {
+    display: block; /* Tampilkan menu dropdown saat ikon hamburger diklik */
+  }
+
+  #mainav li {
+    margin: 0;
+  }
+
+  #mainav li a {
+    padding: 15px;
+    color: white; /* Sesuaikan warna teks */
+  }
+
+  #hamburger-icon {
+    display: block; /* Tampilkan ikon hamburger pada perangkat seluler */
   }
 }
